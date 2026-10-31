@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-10-28",
+  "sources": [
+    {"url": "https://api-docs.deepseek.com/quick_start/pricing/", "supports": "candidate model aliases/revisions, documented context and token prices; runtime revision stability not proven"},
+    {"url": "https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code/", "supports": "DeepSeek Anthropic compatibility and process variables; do not execute global setup instructions"},
+    {"url": "https://api-docs.deepseek.com/quick_start/agent_integrations/codex/", "supports": "DeepSeek native Responses format integration with Codex; does not prove every native compact endpoint"},
+    {"url": "https://api-docs.deepseek.com/guides/responses_api/", "supports": "documented create/stream protocol; compact support remains to be tested"},
+    {"url": "https://code.claude.com/docs/en/context-window", "supports": "current documented compaction and reinjection paths; version-dependent, not automatically applicable to locally installed 2.1.126"},
+    {"url": "https://code.claude.com/docs/en/hooks", "supports": "current PreCompact/PostCompact observability; local installed version compatibility requires validation"},
+    {"url": "https://code.claude.com/docs/en/env-vars", "supports": "CLAUDE_CONFIG_DIR isolates settings and session storage"},
+    {"url": "https://learn.chatgpt.com/docs/config-file/config-reference", "supports": "Codex threshold and context-window are distinct settings; provider env_key and memory settings"},
+    {"url": "https://developers.openai.com/api/docs/guides/compaction", "supports": "OpenAI-native compact output may contain opaque state; not evidence about DeepSeek implementation"}
+  ],
+  "local_read_only_observations": {
+    "codex_version": "0.165.0",
+    "claude_version": "2.1.126",
+    "available_launch_controls": {
+      "claude": ["--bare", "--setting-sources", "--settings", "--strict-mcp-config", "--tools", "--output-format", "--session-id", "--resume", "--fork-session"],
+      "codex": ["--no-daemon", "--ignore-user-config", "--json", "app-server --listen stdio://"]
+    },
+    "claude_bare_auth": "local help specifies ANTHROPIC_API_KEY or explicit apiKeyHelper; do not assume ANTHROPIC_AUTH_TOKEN works in bare mode",
+    "container_tools_present": ["Docker Desktop CLI path", "bwrap", "unshare"],
+    "container_runtime_verified": false,
+    "configuration_or_credentials_read": false,
+    "paid_inference_performed": false
+  }
+}

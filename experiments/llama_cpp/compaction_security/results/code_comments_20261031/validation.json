@@ -1,0 +1,463 @@
+{
+  "scope": "当前维护的 Python 源码、测试和启动脚本；不改历史 runtime/results/logs 中的冻结源码与证据",
+  "python_files": 55,
+  "changed_python_files": 55,
+  "classes_and_functions": 562,
+  "chinese_comment_count": 923,
+  "all_python_ast_unchanged": true,
+  "shell_active_lines_unchanged": true,
+  "all_classes_and_functions_have_chinese_comments": true,
+  "files": [
+    {
+      "file": "experiments/llama_cpp/compaction_security/__init__.py",
+      "ast_unchanged": true,
+      "sha256_before": "d5d94c1ada8de532b57523e54a9f8e164c26d0e03bc4df2a8984ce4ac8454e70",
+      "sha256_after": "d0ae390b48c5b5968032dfe7238efcfeb61650f401edfd122c85e53c6c88d117",
+      "classes_and_functions": 0,
+      "chinese_comment_count": 15
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/agent_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "889762b8519a5fb1c4b04888e87d9bd30d277673ebfdb66bed782eca27c54808",
+      "sha256_after": "05777029fcfbdc6c76a503c72f70fa522beb32d25a62a63e0f63e0a3fb2fd3c9",
+      "classes_and_functions": 4,
+      "chinese_comment_count": 13
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/attack_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "70ebbcc941d922ab4b69a2dcc744665a013094509331da668dd1ee97178e3c45",
+      "sha256_after": "81cd2fc31300ac234967fb18b1cd74d3bcdeccb7e094448210c2ba9ff05ade43",
+      "classes_and_functions": 6,
+      "chinese_comment_count": 13
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/attack_scenarios.py",
+      "ast_unchanged": true,
+      "sha256_before": "3f474cd3ce3762872f0d506c3634270bad9558d22d375c2668004e4d879e8789",
+      "sha256_after": "4b7b6ca2c6b662e7a5afebece4b627ddfbeb2f5a2cefe316a439a67a4ec918de",
+      "classes_and_functions": 7,
+      "chinese_comment_count": 11
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/attack_tools.py",
+      "ast_unchanged": true,
+      "sha256_before": "86f761c2a917de56be97942f8c7d7361b71a1cb515ba95eb00fcd7c599124862",
+      "sha256_after": "25688506be6221226444548799c211b0d3bbcd4914ee54e9987d136a8ea5737d",
+      "classes_and_functions": 7,
+      "chinese_comment_count": 14
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/causal_evaluation.py",
+      "ast_unchanged": true,
+      "sha256_before": "c0363705828685ca62c282cd96d207fcd1a7983a0de9b7aa7bc17bcc1aac8d74",
+      "sha256_after": "713c09b96b5550181ba01975991ebb65930a5b4b705a613b13a9027e4a2577cc",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 6
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/compactor.py",
+      "ast_unchanged": true,
+      "sha256_before": "da7c0b45579880e1568897a347489269f9b54e165c5029735852603513736c90",
+      "sha256_after": "0a961880769292febf3f6bc4beb5899b0832099dc2de49431afb02a3e1314260",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 4
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/config.py",
+      "ast_unchanged": true,
+      "sha256_before": "08fe5e6b40b122d3ef425d8394908cb87fdf4a65dde71c49c3e4abd7d6c98a2d",
+      "sha256_after": "9b22f147ac067e4577974ccd4d9b12e1577c85a160ac493cf4c131c0b9cab600",
+      "classes_and_functions": 0,
+      "chinese_comment_count": 4
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/evaluation.py",
+      "ast_unchanged": true,
+      "sha256_before": "b90da1d6a46f08a5a50483f07f1d11277d2287a1561316dda9f49487556e8535",
+      "sha256_after": "3046cddea8d47df16b5a0858b32a11845a73948e31f8a4f1a202772ba30e7948",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 6
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/history_builder.py",
+      "ast_unchanged": true,
+      "sha256_before": "dc78351199d0856c2d1eeca9512966335042f2d97707129f9fe7577d75f83c6b",
+      "sha256_after": "a271fb3dc27a8777e0b908514470c8b20d3c4d999952ff60125eff9a6c205a3f",
+      "classes_and_functions": 4,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/model_adapter.py",
+      "ast_unchanged": true,
+      "sha256_before": "680967b7c50e1cba271cf233a0255b8d45cedf2628d0a3fc7bab874e37137bdb",
+      "sha256_after": "4d0a99faa0fdd19b8906333f3e528eb6eb0218a3309aef0f234dcc7189d5bfcf",
+      "classes_and_functions": 7,
+      "chinese_comment_count": 9
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/__init__.py",
+      "ast_unchanged": true,
+      "sha256_before": "25b41af4652993b3f6e50ef57245fbb8e270777b943d5e6cb00960ca4d94165c",
+      "sha256_after": "33ee47ac4044cf2bf8a35a9630f7361f940e5a5cab5734098f77aa2a7a0bfe68",
+      "classes_and_functions": 0,
+      "chinese_comment_count": 1
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/analysis.py",
+      "ast_unchanged": true,
+      "sha256_before": "1d3f74d6eaedbbad8db7b4489b89110456b022f1b6fb4b039ed2d325530e6e0e",
+      "sha256_after": "fbd082a96d53b2997cedcff03751d1bf44c8833cf0e48f8004b59ccc1ac724ef",
+      "classes_and_functions": 15,
+      "chinese_comment_count": 37
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/codex_backend.py",
+      "ast_unchanged": true,
+      "sha256_before": "58f5efcdb976a5bd0efd67c6fc597e5eb1693aa0af3d126ad0c2886d48ba16a0",
+      "sha256_after": "2ed02734135417211c23690ceed60d01d1e462476673ce31c5ac61a09887fd2f",
+      "classes_and_functions": 17,
+      "chinese_comment_count": 35
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/codex_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "b472fd506e137aa62adc2754b27bd0a63e77d18964a1d30c10b67f6eee2baeb3",
+      "sha256_after": "ae5fff6e85aa1d23f2ba0600fd2ee3cc99025d6d1135ef3f286d61bc5b70b092",
+      "classes_and_functions": 20,
+      "chinese_comment_count": 48
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/corpus.py",
+      "ast_unchanged": true,
+      "sha256_before": "863008d5925567ba3b35671fec86190e2e1a0d5e1dbb3434197d51a334dac636",
+      "sha256_after": "213af66951270988c08af49f8fe657a84ae00cf983301d004f32f7aa26c3a099",
+      "classes_and_functions": 16,
+      "chinese_comment_count": 38
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/export_losses.py",
+      "ast_unchanged": true,
+      "sha256_before": "778ebfaf20d6e0d2307888d94e5aeef6fc51273a6555d3d65fc244402fc29e9c",
+      "sha256_after": "74ef8c06cb0863dffb644f3932104dc0d73a251c432fe6d9a82040215e2cfb92",
+      "classes_and_functions": 7,
+      "chinese_comment_count": 15
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/gateway.py",
+      "ast_unchanged": true,
+      "sha256_before": "ea56aaa89804d83b054cb4cccc01e3259d1c5edd535aa11b4eed208650a090b9",
+      "sha256_after": "0a85de0ce8c2112432a6d960bbceaf03a74d32ff59eb87a6b42b25ac49aaa299",
+      "classes_and_functions": 19,
+      "chinese_comment_count": 33
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/loss_ledger.py",
+      "ast_unchanged": true,
+      "sha256_before": "35d6c91084644b60d7249f4f93abb9d15f0f34b09c443d3ea14f35840f9b4fa7",
+      "sha256_after": "1351b4501a72ec75d899099fb9adacc65df37cdd1108d7b70a03247221cc62e4",
+      "classes_and_functions": 9,
+      "chinese_comment_count": 24
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/progress.py",
+      "ast_unchanged": true,
+      "sha256_before": "2d0b53babda31745e9dd6ff61f3edaa300d5cde0ae5abef1079e8f523f34e2d4",
+      "sha256_after": "d8082a37754f0ac437ce91a0b49c7269114a3c00bd889ffc0a567a816d6d2855",
+      "classes_and_functions": 14,
+      "chinese_comment_count": 21
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/relation_corpus.py",
+      "ast_unchanged": true,
+      "sha256_before": "78078761fb8078f36647f48e3bbfc12cb78c000f2da69c8f8f757d2eb15867a6",
+      "sha256_after": "80832ae2e108508ea50dbfa922b4947662aee73f23dc9fcb4c1ec597cfe1803e",
+      "classes_and_functions": 2,
+      "chinese_comment_count": 11
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/relation_measurement.py",
+      "ast_unchanged": true,
+      "sha256_before": "8fe49d8d5f5768208223e1792b45c3423463e8661ed30563018c406345f7abfa",
+      "sha256_after": "d5e6297d1728a929bdca4d033e434c0a83be02c136f7f45eb85cc4fd1931cdb0",
+      "classes_and_functions": 17,
+      "chinese_comment_count": 36
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/reporting.py",
+      "ast_unchanged": true,
+      "sha256_before": "3f6d96353b3340bd5b01dcd09f71cd6ae1af6f541af2ef67f9571f45a05f8ec0",
+      "sha256_after": "6ce3a73fae9e350b066ac805a63c4c0a408617a22eb84b40ddd304d53494ec40",
+      "classes_and_functions": 1,
+      "chinese_comment_count": 9
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/responses_gateway.py",
+      "ast_unchanged": true,
+      "sha256_before": "04a032e86407c39154e39a05cd2ef3954b51198e01d28284edc28aa186d3d5fc",
+      "sha256_after": "450c2d72babcef0ec7d30f8cffdb5b597495fcbbf49d6c930eee17c38e7a1445",
+      "classes_and_functions": 25,
+      "chinese_comment_count": 46
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "d96adfc5afd90e1f4b78ee7ff22b5cc48847ad9063628af6da8d0fbebb105f5a",
+      "sha256_after": "7d7c0f74b80e9ff25702f0cbac3aeffeccc8243a34c2340f16346b97dd91f1ea",
+      "classes_and_functions": 26,
+      "chinese_comment_count": 49
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/native_retention/validate.py",
+      "ast_unchanged": true,
+      "sha256_before": "de19f81def900db068aa355c6a0428d430752ac35c0d90cf89cd44855087b42d",
+      "sha256_after": "abb67874466b3528d3b641894abaceda6dbc4add874e12d05af280e96d78ff86",
+      "classes_and_functions": 2,
+      "chinese_comment_count": 9
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/phase1_design/estimate.py",
+      "ast_unchanged": true,
+      "sha256_before": "502baab273a4993ddef17b751e81a2a0832b83e6d9f0f62571bbc032f534a47a",
+      "sha256_after": "28c55c14b991d940b9d8af85c0012d9b53951d9b937cc55b1a0bb9468a576a9a",
+      "classes_and_functions": 1,
+      "chinese_comment_count": 2
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/policies.py",
+      "ast_unchanged": true,
+      "sha256_before": "fb66c41ad48d09754bca03fc655e9564908f645ba0a5d8f141aa224fbcc3f863",
+      "sha256_after": "052572cdccd7ecd9076192ea3f7231cf551428a95e2d87378555d5cdee4ac462",
+      "classes_and_functions": 1,
+      "chinese_comment_count": 3
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/priority_probe/__init__.py",
+      "ast_unchanged": true,
+      "sha256_before": "583f8c9de62468570228ecc4228bc047b9564ce3848a2c9c108d627cde54d171",
+      "sha256_after": "0555ac85bf284156714ff45338d331f1f2dd6926cdc95963e12d0f6654d27e63",
+      "classes_and_functions": 0,
+      "chinese_comment_count": 1
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/priority_probe/analyze.py",
+      "ast_unchanged": true,
+      "sha256_before": "71bbd4c4dfb273d072b828a1b46821a5693de928e124f608c1901fb6e896a232",
+      "sha256_after": "cc97f69c2e84842d23e8d01c8feaf67d032f4b729ebe5d495fa77ea45a3ba7d4",
+      "classes_and_functions": 1,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/priority_probe/generate.py",
+      "ast_unchanged": true,
+      "sha256_before": "7c6865287b7eb411c8e00908523a5dbbab2d33143d3f5f1b74bb844ed5f2602f",
+      "sha256_after": "f15dee9f4829e1403f0d6ea79daa237fff6063b19428b1c2e88e02b671964fc7",
+      "classes_and_functions": 2,
+      "chinese_comment_count": 6
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/run_experiment.py",
+      "ast_unchanged": true,
+      "sha256_before": "685326b47fe919cc556e8a8b9c48897320c15552e638beae5f90dfae75628e48",
+      "sha256_after": "a45f833787704e4c49c1c9aa85b5b368b194370c0f9acd2016486d9171da3b30",
+      "classes_and_functions": 2,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/schemas.py",
+      "ast_unchanged": true,
+      "sha256_before": "406629b168d03c3135800eac40337a759926beafdef10044baa30ce1d2499647",
+      "sha256_after": "a6e7ec729dedfad1e2a6a4302bfb69ce9d409735a5cd1a2857aae1a3590a8382",
+      "classes_and_functions": 4,
+      "chinese_comment_count": 17
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_attack_evaluation.py",
+      "ast_unchanged": true,
+      "sha256_before": "0810cf0eb957a9cfa525f89fef864090948ed488d734e1671e7e0bb3eb47956f",
+      "sha256_after": "bc59d8a82b2d38c5165741c3aa7868cccce139a8daf3862e3b11d128f175f298",
+      "classes_and_functions": 5,
+      "chinese_comment_count": 7
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_attack_tools.py",
+      "ast_unchanged": true,
+      "sha256_before": "3127b30f8467d006050d93115b5f40538f96dd6ab48c1e58a15cba08317b1ddd",
+      "sha256_after": "13cbb23a4821646780ba2cb6097fa6e015ff7ca668ff5d8d112c4413904ee527",
+      "classes_and_functions": 19,
+      "chinese_comment_count": 22
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_codex_backend.py",
+      "ast_unchanged": true,
+      "sha256_before": "7f645e44bc4e1c17ce5641b9e3a3a349247bbd2041752b533f3cfc2e8da326cc",
+      "sha256_after": "f91b984467bf45b582112f0ac91fb563be2aa78622091cfa096bc436e6e7fed1",
+      "classes_and_functions": 25,
+      "chinese_comment_count": 29
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_compactor.py",
+      "ast_unchanged": true,
+      "sha256_before": "c7aacc5bdc93ef4cdd1db061538e7c89a078768a79666be3e07b2dccd9848a75",
+      "sha256_after": "97180efa441179c843f620a3d55077f6a7dfc05505af92bb285f6e3eff032dd1",
+      "classes_and_functions": 5,
+      "chinese_comment_count": 7
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_evaluation.py",
+      "ast_unchanged": true,
+      "sha256_before": "cc7753490038d47db2eb6b96c154d5c926fbe68148f5902c6d6ce467670c3448",
+      "sha256_after": "95e7b17044bc85158bcc227793dd255e26f06c777ef4cf45266aac5e3c0a5c00",
+      "classes_and_functions": 4,
+      "chinese_comment_count": 6
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_export_losses.py",
+      "ast_unchanged": true,
+      "sha256_before": "721c75be4d87031fed8110087e754bcb8303610abbffb35da7999b9fa1a5d75e",
+      "sha256_after": "0c49bb84727d2577b00a45a49787925df12bc10574c6df7c18be961e08c79524",
+      "classes_and_functions": 13,
+      "chinese_comment_count": 15
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_loss_ledger.py",
+      "ast_unchanged": true,
+      "sha256_before": "a25feca85d2edc65dcbc8bb794c99e12c8b87338935a3738dde69101ade283fc",
+      "sha256_after": "f81297aa329531f6bfedd103d196a04274d1c6758166c1a3c897eadaae407b4f",
+      "classes_and_functions": 20,
+      "chinese_comment_count": 22
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_native_analysis.py",
+      "ast_unchanged": true,
+      "sha256_before": "af76c830523dc08adbcbd2edbcee6c51d81aa28dc746a842d347a6efae35ce3e",
+      "sha256_after": "2f10694640cb81a0e2f6031837c1159424ea636b39a40f111a6c5fc4ce51f6bb",
+      "classes_and_functions": 39,
+      "chinese_comment_count": 41
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_native_corpus.py",
+      "ast_unchanged": true,
+      "sha256_before": "1a2e88ef8d3b014d73b3981655ae092f8bdd45bd93ed0c1000b17b234d15587f",
+      "sha256_after": "8d8886461f7ebe81f10addba43d48df8b0e20aafbdacf3a98f310ee86efb98f6",
+      "classes_and_functions": 19,
+      "chinese_comment_count": 21
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_native_gateway.py",
+      "ast_unchanged": true,
+      "sha256_before": "b93eedc4f3e961e71577425ebe01bdf6acacf4ac4994508aa53116f89fb0835e",
+      "sha256_after": "4dac5e7cb752819eb594f6789cd5fa7a1e8b364d288ee598baca3cdb064d9329",
+      "classes_and_functions": 24,
+      "chinese_comment_count": 27
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_native_progress.py",
+      "ast_unchanged": true,
+      "sha256_before": "7a839681ff36f1144df32d4e2aa302528d4e42bdca7cd5d980e25b648f486e54",
+      "sha256_after": "f4ac00d97542b13f8c30c8f47619513809d099c5152a9df67ae33dfee7ff1d44",
+      "classes_and_functions": 20,
+      "chinese_comment_count": 22
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_native_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "2e2c3cfca9cde1fc266a3cb5aa067c69c8c54ab7063138c220a5cc8236abdb1a",
+      "sha256_after": "ec86237d4dc20bb6f9efcefb7b555dfac90581631f9705451d26e0c37290818e",
+      "classes_and_functions": 11,
+      "chinese_comment_count": 15
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_policy.py",
+      "ast_unchanged": true,
+      "sha256_before": "a8c693cd0555784539c8ac99dc505508320828262b336012ea49886f094b3934",
+      "sha256_after": "4a87b62eaf344df081e77dc99300384329b3cd3199aa1165f15b9ce068025994",
+      "classes_and_functions": 4,
+      "chinese_comment_count": 6
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_priority_probe.py",
+      "ast_unchanged": true,
+      "sha256_before": "2295252df52b4a8d3df45e811530050d4ad182fd58d83a8bda4cdcc1e30e7687",
+      "sha256_after": "d5f4fb0e928fa4a1f186d761d0f6cff3e2f6a9cb5e8fcab664bd3e1d6762bdec",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_provenance.py",
+      "ast_unchanged": true,
+      "sha256_before": "fa3d6734c1f1610a33441611d1b406021c300a0f9c7a9b349470eab5dd1a4623",
+      "sha256_after": "ce1a619494ca9fa9de3a6a308a10b4ede9e967a909646fb13ca76804a9cccf0f",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_relation_corpus.py",
+      "ast_unchanged": true,
+      "sha256_before": "2b33cf4533d927a155735958c391f2bd4627ff7de43db1d0333e4068530cb14f",
+      "sha256_after": "72025468bd9954cb0fb8d15eda8c72a90de317853d9bc45a42fe28b929e384f2",
+      "classes_and_functions": 11,
+      "chinese_comment_count": 13
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_relation_measurement.py",
+      "ast_unchanged": true,
+      "sha256_before": "a4f272f289d625093894671097402c74cac9831c7f624ca9c781319da47f62a5",
+      "sha256_after": "7cc434d12e6c0684eb4b2418a0450dbe73b0b24688d870d4e363e154db217673",
+      "classes_and_functions": 30,
+      "chinese_comment_count": 32
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_relation_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "05f608c192d2e2dc0d32f167fb4fc768fb34d215199eab9f34340451a3005fec",
+      "sha256_after": "6ca78fdc88db831ee6c4ee69eff49d399748fd6b0786042fe1e28e8a558db324",
+      "classes_and_functions": 23,
+      "chinese_comment_count": 28
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_responses_gateway.py",
+      "ast_unchanged": true,
+      "sha256_before": "39156ffafd5bb4f1b1129143c5332cc21a08f477b49cd7282c61eae765be63f5",
+      "sha256_after": "c06e89fe392809c9e9142142ba0fcdc872b6cff3b0f00d8d3fd887ed57e7535e",
+      "classes_and_functions": 26,
+      "chinese_comment_count": 29
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_retention_probe.py",
+      "ast_unchanged": true,
+      "sha256_before": "93bc9764f6e100564aefc9777b408824ed393a8a65550062e7ff04cffc0e1b86",
+      "sha256_after": "eccdb858ad6e0722b9d9c3837be78b3c4951b7f50ef3592255cd6ef28c804a73",
+      "classes_and_functions": 3,
+      "chinese_comment_count": 5
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tests/test_runner.py",
+      "ast_unchanged": true,
+      "sha256_before": "24e694de56c4eb3f7946fd4b6dd38ca8df8b4941122329914583ee424a95ad13",
+      "sha256_after": "00b210e520d48959b071c8b8063689e525b14fa2beb0b5feb13c21f91bea63bd",
+      "classes_and_functions": 9,
+      "chinese_comment_count": 11
+    },
+    {
+      "file": "experiments/llama_cpp/compaction_security/tools.py",
+      "ast_unchanged": true,
+      "sha256_before": "8ca58b98448898dae810cb430418ebdaed7d739cae91ae7037e4ccb7f2dcb387",
+      "sha256_after": "ff24590ed74701b090799619e3d6025912bb9402a1b16a63d872ddcd3ced5750",
+      "classes_and_functions": 1,
+      "chinese_comment_count": 4
+    }
+  ],
+  "tests_before": {
+    "passed": 205,
+    "log": "experiments/llama_cpp/compaction_security/results/code_comments_20261031/tests_before.txt"
+  },
+  "tests_after": {
+    "passed": 205,
+    "log": "experiments/llama_cpp/compaction_security/results/code_comments_20261031/tests_after.txt"
+  },
+  "shell_syntax_check": "passed",
+  "cli_help_check": "passed",
+  "real_model_calls_for_this_change": 0
+}

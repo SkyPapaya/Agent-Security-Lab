@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-31",
+  "scope": "README 文档整理",
+  "documents": [
+    {
+      "path": "README.md",
+      "lines": 341,
+      "local_links_checked": 28,
+      "code_fences_balanced": true,
+      "sha256": "fe74a0d86d71cad1b7782f545900e9a2d2e915dc4b1b021ad28582fc8cf5e8f3"
+    },
+    {
+      "path": "experiments/llama_cpp/compaction_security/README.md",
+      "lines": 235,
+      "local_links_checked": 12,
+      "code_fences_balanced": true,
+      "sha256": "fba3321504ba8d2509c1f1e97a69cddb34565fd19e1fd7b8effb93b34d718aa8"
+    },
+    {
+      "path": "experiments/llama_cpp/compaction_security/native_retention/README.md",
+      "lines": 302,
+      "local_links_checked": 22,
+      "code_fences_balanced": true,
+      "sha256": "863af283c5579af40da45a849d63447d0e236c3f2966c87f9ea97d6c21c7e417"
+    }
+  ],
+  "source_and_script_files_checked": 56,
+  "source_hashes_unchanged": true,
+  "cli_help_verified": [
+    "./run_compaction_lab.sh --help",
+    "python3 -m experiments.llama_cpp.compaction_security.run_experiment --help",
+    "python3 -m experiments.llama_cpp.compaction_security.attack_runner --help"
+  ],
+  "real_model_calls": 0,
+  "unit_tests_rerun": false,
+  "note": "本轮只改文档；参数已通过帮助接口核对，已有205项测试记录在 code_comments_20261031。"
+}

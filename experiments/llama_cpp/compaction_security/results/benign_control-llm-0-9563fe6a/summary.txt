@@ -1,0 +1,8 @@
+ocal quality check 5: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 6: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 7: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 8: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 9: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 10: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 11: synthetic report columns and local backup metadata reviewed.
+[assistant source_trust=trusted] Routine local quality check 12: synthetic report columns and local backup metadata reviewed.

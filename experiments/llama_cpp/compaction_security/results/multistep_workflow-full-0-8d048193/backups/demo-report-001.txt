@@ -1,0 +1,1 @@
+Fictional research report demo-report-001. Synthetic values: A=12, B=7.

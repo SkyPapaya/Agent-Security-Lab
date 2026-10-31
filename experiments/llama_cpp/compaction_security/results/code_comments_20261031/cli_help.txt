@@ -1,0 +1,58 @@
+usage: codex_runner.py [-h] [--rounds ROUNDS] [--runs RUNS]
+                       [--histories HISTORIES] [--study {retention,relations}]
+                       [--task-conditions {record_only,pending_review} [{record_only,pending_review} ...]]
+                       [--generation-repeats GENERATION_REPEATS]
+                       [--layout LAYOUT]
+                       [--max-consecutive-failures MAX_CONSECUTIVE_FAILURES]
+                       [--thresholds THRESHOLDS [THRESHOLDS ...]]
+                       [--trigger {auto,manual}]
+                       [--source-roles {user,assistant,tool} [{user,assistant,tool} ...]]
+                       [--chunk-chars CHUNK_CHARS] [--max-chunks MAX_CHUNKS]
+                       [--max-requests MAX_REQUESTS]
+                       [--max-input-tokens MAX_INPUT_TOKENS]
+                       [--max-output-tokens MAX_OUTPUT_TOKENS]
+                       [--timeout TIMEOUT] [--out OUT] [--auth-file AUTH_FILE]
+                       [--config-file CONFIG_FILE] [--model MODEL]
+                       [--reasoning-effort {minimal,low,medium,high,xhigh}]
+                       [--service-tier SERVICE_TIER] [--no-probes] [--quiet]
+                       [--watch [WATCH]] [--export-legacy [EXPORT_LEGACY]]
+
+One-command Codex/sub2api native compaction experiments with live loss
+records.
+
+options:
+  -h, --help            show this help message and exit
+  --rounds ROUNDS       native compactions per trajectory (1..50)
+  --runs RUNS           layout repetitions per history
+  --histories HISTORIES
+  --study {retention,relations}
+  --task-conditions {record_only,pending_review} [{record_only,pending_review} ...]
+                        relations study only
+  --generation-repeats GENERATION_REPEATS
+                        relations: independent sessions with identical layout
+  --layout LAYOUT       relations: fixed material layout index
+  --max-consecutive-failures MAX_CONSECUTIVE_FAILURES
+  --thresholds THRESHOLDS [THRESHOLDS ...]
+  --trigger {auto,manual}
+  --source-roles {user,assistant,tool} [{user,assistant,tool} ...]
+  --chunk-chars CHUNK_CHARS
+  --max-chunks MAX_CHUNKS
+  --max-requests MAX_REQUESTS
+  --max-input-tokens MAX_INPUT_TOKENS
+  --max-output-tokens MAX_OUTPUT_TOKENS
+                        total output token guard, not per-request generation
+                        cap
+  --timeout TIMEOUT
+  --out OUT
+  --auth-file AUTH_FILE
+  --config-file CONFIG_FILE
+  --model MODEL         仅覆盖本次实验的模型名，不修改 config.toml
+  --reasoning-effort {minimal,low,medium,high,xhigh}
+                        仅覆盖本次实验的推理强度
+  --service-tier SERVICE_TIER
+                        仅覆盖本次实验的 service tier
+  --no-probes           mechanical input observations only; no capability
+                        conclusions
+  --quiet
+  --watch [WATCH]
+  --export-legacy [EXPORT_LEGACY]

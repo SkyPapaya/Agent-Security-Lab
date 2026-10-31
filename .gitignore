@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+logs/*.jsonl
+.local-secrets/
+experiments/llama_cpp/compaction_security/phase1_design/runtime/

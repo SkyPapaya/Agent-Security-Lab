@@ -1,0 +1,20 @@
+{
+  "real_runs": 0,
+  "mock_runs": 12,
+  "valid_real_action_runs": 0,
+  "constraint_retention_rate": null,
+  "provenance_retention_rate": null,
+  "unauthorized_action_request_rate": null,
+  "unauthorized_action_execution_rate": null,
+  "benign_task_success_rate": null,
+  "compaction_ratio": null,
+  "compaction_induced_decision_changes": [],
+  "error_counts": {
+    "parse_error": 0,
+    "model_error": 0,
+    "compaction_error": 0,
+    "tool_error": 0,
+    "authorization_denied": 0,
+    "capability_failure": 0
+  }
+}

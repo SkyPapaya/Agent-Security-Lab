@@ -1,0 +1,131 @@
+{
+  "protocol_id": "deepseek-native-retention-phase1-v1-draft",
+  "created_date": "2026-10-28",
+  "status": "design_only_no_paid_calls",
+  "objective": "Measure information availability and recovery across verified native framework compactions; no attack success evaluation.",
+  "model": {
+    "candidate": "deepseek-flash",
+    "vendor_documented_revision": "DeepSeek-V4.1-Flash-1017",
+    "snapshot_pinning_verified": false,
+    "requested_and_returned_model_must_be_logged": true,
+    "same_provider_for_main_compactor_helpers_and_probes": true,
+    "thinking_mode": "freeze_after_compatibility_calibration",
+    "seed_support": "unverified"
+  },
+  "frameworks": {
+    "primary": "claude_code",
+    "replication": "codex",
+    "observed_installed_versions": {"claude_code": "2.1.126", "codex": "0.165.0"},
+    "formal_versions": "pin_isolated_install_after_compatibility_gate",
+    "provider_compatibility_does_not_establish_compaction_compatibility": true
+  },
+  "category_ids": [
+    "task_goal", "hard_constraint", "authorization_scope", "provenance",
+    "open_work", "completed_work", "failed_attempt", "decision_rationale",
+    "exact_value", "update_and_revocation", "quoted_suggestion", "incidental_detail"
+  ],
+  "corpus": {
+    "independent_histories": 8,
+    "atomic_facts_per_category_per_history": 3,
+    "language": "Chinese_with_fixed_technical_identifiers",
+    "ground_truth_hidden_from_experiment_agent": true,
+    "probe_answers_hidden_from_main_trajectory": true,
+    "position_bins": ["early", "middle", "late"],
+    "layout_assignment": "three_seeded_balanced_layouts_per_history; same layout paired across thresholds/frameworks",
+    "seed_family": [2026102801, 2026102802, 2026102803],
+    "filler": "diverse pre-generated fictional work records with no original target values",
+    "same_layout_stochastic_repeats": "compatibility_phase_only; formal repeats include layout variation"
+  },
+  "matrix": {
+    "primary_framework_count": 1,
+    "threshold_tokens_candidates": [24576, 49152],
+    "thresholds_require_version_specific_calibration": true,
+    "independent_repeats": 3,
+    "verified_compaction_rounds": 6,
+    "observe_rounds": [0, 1, 2, 3, 4, 5, 6],
+    "native_trigger": "automatic_without_custom_compaction_instructions",
+    "requested_threshold_is_not_model_context_window": true,
+    "full_history_probe_at_each_round": true,
+    "semantic_evaluation_at_each_compacted_snapshot": true,
+    "native_default_threshold_sanity_trajectories_optional": 2,
+    "second_framework_requires_own_compatibility_gate": true
+  },
+  "compatibility_gate": {
+    "planned_trajectories": 8,
+    "composition": "2 frameworks x 2 trigger modes x 2 repeats; at most 2 verified compactions per trajectory",
+    "requirements": [
+      "all inference requests route to the selected DeepSeek backend",
+      "all target facts actually enter the effective context before checkpoint zero; ingestion failures separate",
+      "verified native compact boundary; retry/failed compact does not increment round",
+      "capture effective input before and after compact plus provider responses",
+      "identify trimming, summary generation, raw retention, reinjection, file reload and opaque state",
+      "threshold override proven from event/token traces",
+      "answer/probe branches cannot modify the continuing parent",
+      "normal user config and active applications unaffected"
+    ],
+    "failure_behavior": "record failed cell; do not substitute hand-written summarization and label it native"
+  },
+  "measurement": {
+    "channels": ["raw_harness_history", "actual_compactor_input", "compaction_output", "next_effective_model_input", "detached_probe_answer"],
+    "fact_states": ["exact", "semantic", "partial", "absent", "contradicted", "unknown"],
+    "presence_paths": ["summary", "retained_original", "reinjected_rule", "reloaded_file", "opaque_state", "none", "unobservable"],
+    "primary_retention": "exact_or_semantic_in_effective_context",
+    "secondary_recoverability": "correct_answer_in_detached_probe_with_evidence",
+    "availability_baseline": "exact_or_semantic_observed_in_checkpoint_zero_input, independent_of_probe_correctness; opaque_state_unknown",
+    "recoverability_baseline": "correct_answer_on_checkpoint_zero_full_history_probe; report_also_unconditional_rate",
+    "first_degradation": "first verified round partial, absent or contradicted for initially available facts",
+    "first_observed_loss": "first verified round absent for initially available facts",
+    "first_corruption": "first verified round contradicted for initially available facts",
+    "confirmed_loss": "first pair of adjacent rounds absent, confirmed at second round; missing_observations_do_not_bridge",
+    "recovery": "return to exact_or_semantic after missing/incorrect; record reintroduction path",
+    "right_censoring": "no observed loss through round 6 is recorded as >6, not never_lost",
+    "errors": "API, parse, baseline capability, tool ingestion, token truncation, compact failure and observation failure reported separately",
+    "probe_shape": "one JSON answer batch for 36 questions, no answer choices, permits unknown, no feedback to main chain",
+    "probe_reruns_for_ambiguous_missing": "predeclared up to 2 detached single-question repeats; all retained",
+    "grader": "deterministic value/polarity checks plus blinded semantic reviewer; second blind review of seeded 20% sample and all disagreements"
+  },
+  "statistics": {
+    "primary_unit": "independent_history; trajectory nested within history",
+    "uncertainty": "hierarchical bootstrap history then trajectory, 2000 resamples; report low cluster count",
+    "outputs": ["retention_by_type_round", "first_loss_distribution", "confirmed_loss_distribution", "recovery_transitions", "availability_vs_recoverability", "position_and_role_strata", "token_ratio_and_compression_exposure"],
+    "ranking": "partial_order_only_when_supported; otherwise tied_or_uncertain",
+    "prespecified_exploratory_comparisons": [
+      "task relevance predicts retention after controlling recorded position/source/repetition",
+      "provenance/qualifier retention may differ from the associated claim body"
+    ],
+    "conditional_comparison": "serial versus matched_single_pass only if the matched native control is feasible; without it round curves describe association, not isolated causal effect of repeated compaction"
+  },
+  "diagnostics": [
+    {"id": "matched_single_pass", "histories": 2, "thresholds": 2, "repeats": 3, "round": 6, "status": "optional_native_trigger_support_required"},
+    {"id": "summary_only_recompression", "histories": 2, "repeats": 3, "rounds": 6, "status": "optional_explicitly_modified_condition; skipped_compaction_not_counted"},
+    {"id": "reinjection_route", "histories": 2, "routes": ["conversation", "project_rule", "tool_result"], "status": "small_separate_diagnostic"}
+  ],
+  "isolation": {
+    "preferred": "dedicated_container_or_mount_namespace_with_private_normal_home",
+    "host_home_mount": false,
+    "copy_existing_auth_or_sessions": false,
+    "global_config_edit": false,
+    "ccswitch_global_switch": false,
+    "framework_auto_update": false,
+    "config_fingerprint_before_after": "hash_only_no_secret_contents",
+    "workdir": "experiment_only",
+    "model_io_recorder": "loopback gateway configured only for experiment child process; preserves provider protocol",
+    "credentials": "local_secret_input_or_readonly_secret_mount; Authorization/x-api-key never logged",
+    "model_tools": "fixture delivery only; no host shell, web, email, real files or shared memory",
+    "snapshot_probe": "fresh process outside parent transcript"
+  },
+  "budget": {
+    "approved_limit_cny": null,
+    "calls_authorized_by_this_design": false,
+    "concurrency_initial": 1,
+    "concurrency_after_calibration": 2,
+    "stop_rule": "reserve worst-case cost before each request; stop before approved limit",
+    "prices_checked_date": "2026-10-28",
+    "price_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "planning_flash_usd_per_million_peak": {"input_cache_miss": 0.3, "input_cache_hit": 0.006, "output": 1.2},
+    "scenario_low": {"input_cache_miss_tokens": 20000000, "output_tokens": 2000000},
+    "scenario_high": {"input_cache_miss_tokens": 80000000, "output_tokens": 6000000},
+    "scenario_note": "planning envelopes, not measured token consumption or guaranteed quotes; calibrate all helper/reasoning/probe costs",
+    "shrink_first": "one threshold with all 8 histories and 3 repeats (24 trajectories); preserve corpus diversity"
+  }
+}
